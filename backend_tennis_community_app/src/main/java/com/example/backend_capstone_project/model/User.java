@@ -60,8 +60,8 @@ public class User {
     // Coach-specific fields
     private Boolean isCoach = false;
     private String coachExperienceDescription;
-    private Boolean canLendRacquet;
-    private Boolean canSupplyBalls;
+    private Boolean canLendRacquet = false;
+    private Boolean canSupplyBalls = false;
     private Double coachRating;
 
     @OneToMany(mappedBy = "coach", cascade = CascadeType.ALL, orphanRemoval = false)
